@@ -40,19 +40,23 @@ button {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 320px;
     margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 
@@ -66,9 +70,10 @@ img {
 
 .section-subtitle {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: center;
 }
 
 .section-text {
@@ -76,6 +81,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .visually-hidden {
@@ -207,7 +213,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1440px;
+    max-width: 320px;
     margin: 0 auto;;
 }
 
@@ -251,15 +257,17 @@ img {
 
 .mission-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 72px;
 }
 
 .mission-item {
-    width: calc((100% - 24px) / 4);
+   width: 100%;
 }
 
 .mission-item-wrap {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 112px;
@@ -280,12 +288,22 @@ img {
 }
 
 .mission-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
     margin-bottom: 8px;
 }
 
 .mission-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #434455;
+    text-align: left;
 }
 
 
@@ -298,7 +316,6 @@ img {
 
 .team-item {
     background-color: #ffffff;
-    width: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -342,7 +359,8 @@ img {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    /* gap: 24px; */
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -382,10 +400,11 @@ img {
 
 .portfolio-list {
     display: flex;
-    gap: 24px;
+    gap: 48px;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    justify-content: center;
+    /* column-gap: 24px;
+    row-gap: 48px; */
 }
 
 .portfolio-info {
@@ -395,7 +414,7 @@ img {
 }
 
 .portfolio-item {
-    width: calc((100% - 2 * 24px) /3);
+    /* width: calc((100% - 2 * 24px) /3); */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -444,17 +463,20 @@ img {
 
 .footer {
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .footer-wrapper {
     display: flex;
-    align-items: baseline
+    flex-direction: column;
+    /* align-items: baseline; */
 }
 
 .footer-about {
-    margin-right: 120px
+    margin-bottom: 72px;
 }
 
 .footer-link {
@@ -465,7 +487,9 @@ img {
     letter-spacing: 0.03em;
     color: #4d5ae5;
     text-transform: uppercase;
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
     margin-bottom: 16px;
 }
 
@@ -476,10 +500,12 @@ img {
 .footer-text {
     color: #f4f4fd;
     max-width: 264px;
+    text-align: left;
 }
 
 .footer-social {
     max-width: 280px;
+    margin-bottom: 72px;
 }
 
 .footer-subtitle {
@@ -487,12 +513,14 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #ffffff;
     margin-bottom: 16px;
 }
 
 .social-links-list {
     display: flex;
+    justify-content: center;
     gap: 16px;
 }
 
@@ -522,7 +550,9 @@ img {
 }
 
 .sub-text {
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -533,13 +563,20 @@ img {
 
 .footer-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
+    /* gap: 24px; */
 }
 
 .subscription {
-    width: 453px;
-    height: 80px;
-    margin-left: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* width: 453px;
+    height: 80px; */
+    /* margin-left: 80px; */
 
 }
 
@@ -554,7 +591,8 @@ img {
     outline: none;
     border: 1px solid #ffffff;
         border-radius: 4px;
-        width: 264px;
+        /* width: 264px; */
+        width: 100%;
         height: 40px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
@@ -571,9 +609,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
     gap: 16px;
     border-radius: 4px;
-        min-width: 165px;
+        width: 165px;
         height: 40px;
         background-color: #4d5ae5;
         color: #ffffff;
@@ -587,7 +626,6 @@ img {
 
 .send-icon {
     fill: #ffffff;
-    margin-left: 16px;
 }
 /* ---------MODAL---------- */
 
@@ -823,3 +861,185 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .mission-list {
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .mission-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .mission-subtitle {
+        text-align: left;
+    }
+
+    .team > .container {
+        width: 584px;
+    }
+
+    .team-list {
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
+    }
+    
+    .portfolio-list {
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+        
+    .portfolio-item {
+        width: calc((100% - 24px) /2);
+    }
+
+    .portfolio-subtitle {
+        text-align: left;
+    }
+
+    .portfolio-text {
+        text-align: left;
+    }
+
+    .footer > .container {
+        width: 528px;
+    }
+
+    .footer-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+    }
+
+    .footer-link {
+        justify-content: left;
+    }
+
+    .footer-subtitle {
+        text-align: left;
+    }
+
+    .subscription {
+        align-items: flex-start;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .sub-input {
+        width: 264px;
+    }
+
+
+}
+
+@media screen and (min-width: 1158px) {
+    .container, .team>.container {
+        width: 1158px; 
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .mission-list {
+        gap: 24px;
+    }
+
+    .mission-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .mission-item-wrap {
+        display: flex;
+    }
+
+    .mission-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .mission-text{
+        font-weight: 400;
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .team-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
+
+    .portfolio-list {
+        column-gap: 24px;
+            row-gap: 48px;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 2 * 24px) /3);
+    }
+
+    .container, .footer>.container {
+            width: 1158px;
+            padding-left: 15px;
+            padding-right: 15px;
+    }
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-wrapper {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        gap: 0;
+    }
+
+    .footer-about {
+        margin-right: 120px;
+        margin-bottom: 0;
+    }
+
+    .footer-link {
+        display: inline-block;
+    }
+
+    .sub-text {
+        display: inline-block;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-text {
+        width: 264px;
+    }
+
+    .footer-social {
+        margin-bottom: 0;
+        margin-right: 80px;
+    }
+}
