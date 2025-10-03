@@ -20,7 +20,7 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-wrapper">
         <nav class="header-navigation">
           <a class="header-logo" href="./index.html"
@@ -54,8 +54,99 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg class="menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#menu-open-btn"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <div class="container mob-menu-container">
+          <button type="button" class="menu-close-btn">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="mob-menu-header-navigation">
+            <ul class="mob-header-menu">
+              <li class="mob-header-menu-item">
+                <a class="mob-header-menu-link header-line" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-header-menu-item">
+                <a class="mob-header-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="mob-header-menu-item">
+                <a class="mob-header-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mob-header-contacts">
+            <ul class="mob-header-contacts-list">
+              <li class="mob-header-contacts-item">
+                <a
+                  class="mob-header-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mob-header-contacts-item">
+                <a class="mob-header-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-social-links-list">
+            <li class="mob-social-links-item">
+              <a
+                href="https://www.instagram.com/"
+                class="icon-link"
+                target="_blank"
+              >
+                <svg class="mob-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-links-item">
+              <a
+                href="https://www.twitter.com/"
+                class="icon-link"
+                target="_blank"
+              >
+                <svg class="mob-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-links-item">
+              <a
+                href="https://www.facebook.com/"
+                class="icon-link"
+                target="_blank"
+              >
+                <svg class="mob-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-links-item">
+              <a
+                href="https://www.linkedin.com/"
+                class="icon-link"
+                target="_blank"
+              >
+                <svg class="mob-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main class="main">
       <section class="main-hero">
         <div class="container container-hero">
@@ -726,7 +817,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -810,6 +901,6 @@
           <button class="modal-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
